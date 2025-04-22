@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closest Friend</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='jocs.css') }}">
+</head>
+<body>
+    <h1>Welcome to Closest Friend 💖</h1>
+    <button id="thoughts-btn">Pour your thoughts</button>
+    <button id="memories-btn">Reminisce old memories</button>
+
+    <div id="entry-form" style="display:none;">
+        <textarea id="entry" placeholder="Write your heart out..."></textarea>
+        <button id="save-btn">Save Entry</button>
+    </div>
+
+    <h2>Your Memories ✨</h2>
+    <div id="memory-list" style="display:none;"></div>
+
+    <script src="{{ url_for('static', filename='jojs.js') }}"></script>
+</body>
+</html>
